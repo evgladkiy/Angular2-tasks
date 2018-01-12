@@ -1,0 +1,39 @@
+section {
+    display: flex;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    border: 1px solid #e5e5e5;
+    font-size: 1.8rem;
+}
+
+h3 {
+    display: inline;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+p {
+    text-align: justify;
+    line-height: 2.4rem;
+}
+
+.course-info-container div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.course-buttons__container {
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-width: 150px;
+    margin-left: 20px;
+}
+
+.course-buttons__container > *:not(:last-child) {
+    margin-bottom: 10px;
+}

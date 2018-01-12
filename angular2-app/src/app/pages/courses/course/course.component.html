@@ -1,0 +1,13 @@
+<section>
+    <div class="course-info-container">
+        <div>
+            <h3><span>{{course.title}}</span> | <span>{{formatMinToHourMin(course.duration)}}</span></h3>
+            <span>{{course.creatingDate | date}}</span>
+        </div>
+        <p>{{course.description}}</p>
+    </div>
+    <div class="course-buttons__container">
+        <a href="#" class="btn btn_link">Edit course</a>
+        <button class="btn btn__with-logic" (click)="deleteCourse(course)">Delete</button>
+    </div>
+</section>

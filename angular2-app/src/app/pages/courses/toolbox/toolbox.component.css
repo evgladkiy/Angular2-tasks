@@ -1,0 +1,29 @@
+:host {
+    width: 100%;
+}
+section {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.find-course__container {
+    font-size: 0;
+    flex-grow: 1;
+}
+
+.find-course__container > * {
+    display: inline-block;
+}
+
+input {
+    margin-right: 30px;
+}
+
+.search-container i {
+    font-size: 1.6rem;
+    font-weight: bold;
+    position: absolute;
+    z-index: -1;
+    top: 6px;
+    left: 5px;
+}

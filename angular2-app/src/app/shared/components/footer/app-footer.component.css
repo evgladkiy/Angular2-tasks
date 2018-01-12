@@ -1,0 +1,8 @@
+:host {
+    height: 50px;
+    background: #343f6a;
+    color: rgba(255, 255, 255, .8);
+    font-size: 2rem;
+    text-align: center;
+    line-height: 50px;
+}

@@ -1,0 +1,50 @@
+:host {
+    height: 76px;
+    background: #343f6a;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .28);
+    padding: 10px 0;
+}
+
+header > div:not(:last-of-type) {
+    float: left;
+}
+
+header > div:last-of-type {
+    float: right;
+}
+
+a.logo {
+    font-size: 2.4rem;
+    display: inline-block;
+}
+
+a.logo span {
+    vertical-align: bottom;
+    line-height: 56px;
+}
+
+img {
+    height: 56px;
+}
+
+.course_container {
+    margin-left: 40px;
+    padding: 17px 0;
+}
+
+.login-container {
+    font-size: 1.8rem;
+    color: rgba(255, 255, 255, .8);
+    text-align: right;
+    padding: 10px 0;
+}
+
+.login-container a {
+    color: #bbebe9;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,8 @@
+<toolbox></toolbox>
+<div class="courses__container">
+    <course
+        *ngFor="let course of courses"
+        [course]="course"
+        (delete)="logDeletedCourse($event)">
+    </course>
+</div>
