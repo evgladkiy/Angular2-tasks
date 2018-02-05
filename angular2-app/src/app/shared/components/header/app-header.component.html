@@ -5,11 +5,11 @@
             <span>Angular</span>
         </a>
     </div>
-    <div class="course_container">
+    <div *ngIf="isUserAuthenticated" class="course_container">
         <a href="#" class="btn btn_link">Courses</a>
     </div>
-    <div class="login-container">
-        <p>userLogin</p>
-        <a href="#">logoff</a>
+    <div *ngIf="isUserAuthenticated" class="login-container">
+        <p>{{userLogin}}</p>
+        <a href="#" (click)="AuthService.logout()">logoff</a>
     </div>
 </header>

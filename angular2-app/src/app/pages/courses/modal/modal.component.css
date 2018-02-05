@@ -1,0 +1,49 @@
+:host {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+section {
+    position: absolute;
+    max-width: 500px;
+    background-color: #fff;
+    font-size: 1.8rem;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -ms-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .28);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+h3  {
+    font-weight: bold;
+    font-size: 20px;
+}
+p {
+    line-height: 2.4rem;
+}
+
+.modal-header,
+.modal-body {
+    padding: 15px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 20px;
+}
+
+button {
+    margin-left: 10px;
+}
+

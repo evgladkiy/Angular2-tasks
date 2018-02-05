@@ -1,13 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'toolbox',
-  templateUrl: './toolbox.component.html',
-  styleUrls: ['./toolbox.component.css']
+    selector: 'toolbox',
+    templateUrl: './toolbox.component.html',
+    styleUrls: ['./toolbox.component.css'],
 })
 
-export class Toolbox {
-    searchValue = '';
+export class Toolbox implements OnInit {
+    public searchValue: string;
+
+    ngOnInit(): void {
+        this.searchValue = '';
+    }
 
     logSearchValue():void {
         console.log(this.searchValue);

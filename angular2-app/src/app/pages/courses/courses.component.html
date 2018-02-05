@@ -1,8 +1,12 @@
-<toolbox></toolbox>
-<div class="courses__container">
-    <course
-        *ngFor="let course of courses"
-        [course]="course"
-        (delete)="logDeletedCourse($event)">
-    </course>
-</div>
+<app-header></app-header>
+<main class="limited-width">
+    <toolbox></toolbox>
+    <div class="courses__container">
+        <course
+                *ngFor="let course of courses"
+                [course]="course">
+        </course>
+    </div>
+</main>
+<modal *ngIf="ModalWindowService.shouldShowModal"></modal>
+<app-footer></app-footer>

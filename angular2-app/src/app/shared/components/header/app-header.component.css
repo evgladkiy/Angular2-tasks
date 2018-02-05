@@ -5,11 +5,12 @@
     padding: 10px 0;
 }
 
-header > div:not(:last-of-type) {
+header > .logo-container,
+header > .course_container {
     float: left;
 }
 
-header > div:last-of-type {
+header > .login-container {
     float: right;
 }
 
@@ -29,14 +30,14 @@ img {
 
 .course_container {
     margin-left: 40px;
-    padding: 17px 0;
+    padding-top: 17px;
 }
 
 .login-container {
     font-size: 1.8rem;
     color: rgba(255, 255, 255, .8);
     text-align: right;
-    padding: 10px 0;
+    padding-top: 10px;
 }
 
 .login-container a {

@@ -1,4 +1,4 @@
-:host {
+:host > * {
     display: flex;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;

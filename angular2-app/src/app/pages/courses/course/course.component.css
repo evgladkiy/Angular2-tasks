@@ -1,7 +1,10 @@
+:host:not(:last-of-type) section {
+    margin-bottom: 30px;
+}
+
 section {
     display: flex;
     padding: 15px 20px;
-    margin-bottom: 30px;
     border-radius: 3px;
     border: 1px solid #e5e5e5;
     font-size: 1.8rem;

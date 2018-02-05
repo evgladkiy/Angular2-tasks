@@ -196,7 +196,7 @@ body {
     cursor: pointer;
     -webkit-transition: all .3s ease-out;
     transition: all .3s ease-out;
-    opacity: 0.8;
+    opacity: 0.9;
     text-align: center;
     background: #1a70a9;
 }
@@ -210,12 +210,21 @@ body {
     background: #ce1a38;
 }
 
-.btn:hover {
-    opacity: 1;
+.btn.btn_cancel {
+    background: #343f6a;
 }
 
-input {
-    width: 70%;
+.btn.btn_del {
+    background: #3f669f;
+}
+
+.btn:hover {
+opacity: 1;
+}
+
+
+input:not([type="submit"]) {
+    width: 80%;
     height: 30px;
     padding: 4px 10px 2px 20px;
     border: none;
@@ -228,7 +237,13 @@ input {
     letter-spacing: 0.5px;
 }
 
-input:focus {
+input:not([type="submit"]):focus {
     border-bottom: 2px solid #343f6a;
     padding-bottom: 1px;
 }
+
+main {
+    flex-grow: 1;
+    padding: 50px 0
+}
+

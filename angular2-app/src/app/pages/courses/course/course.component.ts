@@ -1,18 +1,19 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ModalWindowService } from "../../../shared/services";
+import { CourseInterface } from "../../../shared/interfaces";
 
 @Component({
-  selector: 'course',
-  templateUrl: './course.component.html',
-  styleUrls: ['./course.component.css'],
+    selector: 'course',
+    templateUrl: './course.component.html',
+    styleUrls: ['./course.component.css'],
 })
 
 export class Course {
-    @Input() course: Course;
-    @Output('delete') logDeletedCourse = new EventEmitter();
+    @Input() course: CourseInterface;
 
-    deleteCourse(course: Course): void {
-        this.logDeletedCourse.emit(course);
-    }
+    constructor (
+        public ModalWindowService: ModalWindowService
+    ){}
 
     formatMinToHourMin(min: number): string {
         const hours = Math.floor(min / 60);

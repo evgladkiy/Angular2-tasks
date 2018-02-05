@@ -1,3 +1,2 @@
-<app-header></app-header>
-<courses class="limited-width"></courses>
-<app-footer></app-footer>
+<courses *ngIf="AuthService.isAuthenticated()"></courses>
+<login-page *ngIf="!AuthService.isAuthenticated()"></login-page>
